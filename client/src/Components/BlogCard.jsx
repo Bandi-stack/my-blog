@@ -6,7 +6,7 @@ const BlogCard = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:3006/get")
+      .get("https://my-blog-backend-btuh.onrender.com/get")
       .then((result) => setPosts(result.data))
       .catch((err) => console.log(err));
   }, []);

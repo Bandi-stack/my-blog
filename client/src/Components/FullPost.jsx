@@ -8,7 +8,7 @@ const FullPost = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3006/get/${postId}`)
+      .get(`https://my-blog-backend-btuh.onrender.com/get/${postId}`)
       .then((result) => setCompPost(result.data))
       .catch((err) => console.log(err));
   }, [postId]);

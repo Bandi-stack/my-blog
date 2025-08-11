@@ -32,10 +32,13 @@ const CreatePost = () => {
       formData.append("image", img);
     });
     try {
-      const response = await fetch("http://localhost:3006/add", {
-        method: "POST",
-        body: formData, // Send as FormData, not JSON
-      });
+      const response = await fetch(
+        "https://my-blog-backend-btuh.onrender.com/add",
+        {
+          method: "POST",
+          body: formData, // Send as FormData, not JSON
+        }
+      );
       if (!response.ok) {
         throw new Error("Failed to add the post.");
       }
