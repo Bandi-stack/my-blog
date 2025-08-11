@@ -12,6 +12,9 @@ const Navbar = () => {
             <Link className="navLink" to="/tarak">
               Creator
             </Link>
+            <Link className="navLink" to="/secret">
+              Creator
+            </Link>
           </div>
         </nav>
       </div>
