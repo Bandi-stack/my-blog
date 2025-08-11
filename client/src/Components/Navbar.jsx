@@ -13,7 +13,7 @@ const Navbar = () => {
               Creator
             </Link>
             <Link className="navLink" to="/secret">
-              Creator
+              Add post
             </Link>
           </div>
         </nav>
